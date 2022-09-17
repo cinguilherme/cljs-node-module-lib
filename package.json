@@ -1,0 +1,9 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "shadow-cljs": "^2.20.2"
+  }
+}
