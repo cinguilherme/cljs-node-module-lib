@@ -8,7 +8,7 @@
 - The cljs holds all the cljs sources, which is built using shadow-cljs build setup to have js native code available in compiled/js/module.js
 - The JS code is available in its Typescript shape in src/ but both the TS for dev and the production build look for the compiled/js in the same manner. [IDK if this is really a good idea. I'm experimenting]
 
-![alt text](https://github.com/cinguilherme/cljs-node-module-lib/blob/master/documentation/CLJS_Typescript.png?raw=true)
+![alt text](https://github.com/cinguilherme/cljs-node-module-lib/blob/main/documentation/CLJS_Typescript.png?raw=true)
 
 ### Testing
 wip
