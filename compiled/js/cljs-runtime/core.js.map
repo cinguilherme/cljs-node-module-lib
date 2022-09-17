@@ -1,0 +1,1 @@
+{"version":3,"sources":["core.cljs"],"mappings":";;AAEA,WAAA,XAAgBA,8BAAKC;AAArB,AAAwB,OAACC,yGAAQ,gDAAA,HAAKD;;AAGtC,WAAA,2CAAA,tDAAeE,wGACPH;AAER","names":["core/say","n","cljs.core.println","core/lib"],"sourcesContent":["(ns core)\n\n(defn ^:exports say [n] (println (str n \"Yaaaa\")))\n\n\n(def ^:exports lib \n  {:say say})\n\n(comment \n  \n  (say \"mee\")\n  \n  )"]}

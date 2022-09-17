@@ -1,14 +1,22 @@
 ;; shadow-cljs configuration
 {:source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
+ ["cljs/src/dev"
+  "cljs/src/main"
+  "cljs/src/test"]
 
  :dependencies
  []
 
  :builds
- {:lib {:target :esm
-        :output-dir "public/js"
+ {
+  ;; build for ES Module flavor
+  :lib {:target :esm
+        :output-dir "compiled/js"
         :optimizations :none
-        :modules {:demo {:exports {say core/say}}}}}}
+        :modules {:demo {:exports {say core/say}}}}
+  
+  ;;build for common-js flavor, not really working well
+  :lib-2 {:target :node-library 
+          :output-to "lib2.js"
+          :optimizations :none
+          :exports-var core/lib}}}
